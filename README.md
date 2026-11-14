@@ -1,7 +1,5 @@
 # Houdini Miner
 
-<!-- Place the official horizontal logo at assets/logo.png
-     (source file: logo_horizontal.png). -->
 <p align="center">
   <img src="assets/logo.png" alt="Houdini Miner" width="480">
 </p>
@@ -14,7 +12,7 @@ This repository is intended to host documentation and official release packages.
 
 **Beta.** This software is under active development. Behaviour, package layout, and performance may change between builds.
 
-<!-- TODO: set the official public version name (the inspected package uses 61d92ca; the binary reports "houdini 1.0 (Pearl)"). -->
+The current public build is the GitHub prerelease [Houdini (beta)](https://github.com/houdiniminer/HoudiniMiner/releases/tag/beta), package version **13f95d9**. The miner binary still reports `houdini 1.0 (Pearl)`.
 
 ## Features
 
@@ -39,9 +37,12 @@ The binary includes kernels for NVIDIA architectures **sm_80**, **sm_86**, **sm_
 
 ## Download
 
-<!-- TODO: official download URL and release version. There are no GitHub Releases in this repository yet. Do not publish a SHA256 here until it matches a file attached to a release or committed in the repo. -->
+The current Beta package is in the [Houdini (beta)](https://github.com/houdiniminer/HoudiniMiner/releases/tag/beta) release:
 
-Official packages have not been published yet. When a release is available, download it from the [Releases](https://github.com/houdiniminer/HoudiniMiner/releases) page (or from the official URL listed here) and verify its checksum before installing.
+- File: [`houdini-13f95d9.tar.gz`](https://github.com/houdiniminer/HoudiniMiner/releases/download/beta/houdini-13f95d9.tar.gz)
+- SHA256: `bf5d8e45c6ff3093e3c7f5cbcabe792eb035ecfb35c5787fda13b48d35179e06`
+
+Use that `.tar.gz` URL as the HiveOS custom miner installation URL. Verify the checksum before installing (see [Verifying the download](#verifying-the-download)). Later builds will be listed on the [Releases](https://github.com/houdiniminer/HoudiniMiner/releases) page.
 
 ## HiveOS installation
 
@@ -148,13 +149,19 @@ The RTX 5080 range above is the measured set from those tests. It sits close to,
 
 ## Verifying the download
 
-After downloading an official package, check its SHA256 checksum against the hash published with that release:
+After downloading the official package, check its SHA256 checksum:
 
 ```bash
-sha256sum houdini-<version>.tar.gz
+sha256sum houdini-13f95d9.tar.gz
 ```
 
-<!-- TODO: publish the official SHA256 of each release asset here and in the GitHub Release notes. Do not list a hash until it matches a file in this repository or a published release. -->
+The expected checksum for `houdini-13f95d9.tar.gz` is:
+
+```
+bf5d8e45c6ff3093e3c7f5cbcabe792eb035ecfb35c5787fda13b48d35179e06
+```
+
+If you download a newer release, use the hash published with that release instead of the value above.
 
 ## Troubleshooting
 
